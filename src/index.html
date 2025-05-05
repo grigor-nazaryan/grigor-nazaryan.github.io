@@ -3,16 +3,50 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="icon" href="https://img.icons8.com/pulsar-color/48/parse-from-clipboard.png" />
 	<title>Grigor Nazaryan - CV</title>
+	<style>
+		@media (max-width: 767.98px) {
+			.main-container {
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			.col-2 {
+				display: none !important;
+			}
+
+			.col-10 {
+				width: 100% !important;
+			}
+
+			.px-4 {
+				padding-left: 1rem !important;
+				padding-right: 1rem !important;
+			}
+
+			.table-skills th {
+				font-size: 16px !important;
+			}
+
+			.table-skills h4 {
+				font-size: 18px !important;
+			}
+
+			.block-icon,
+			.vertical-line {
+				display: none !important;
+			}
+		}
+	</style>
 </head>
 
 <body>
 	<div class="container main-container my-4 z-depth-2">
 		<div class="row">
-			<div class="col col-2 blue-grey darken-2 py-4">
+			<div class="col col-2 blue-grey darken-2 py-4 d-none d-md-block">
 				<div class="row justify-content-end px-4">
 					<div class="p-0">
 						<h2 class="teal-text vertical-text font-24 text-right m-0">
@@ -26,7 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col col-10 white py-3 pb-5">
+			<div class="col col-12 col-md-10 white py-3 pb-5">
 				<div class="row about px-4">
 					<div class="col col-12 col-lg-8 col-xl-8 info">
 						<h1 class="blue-grey-text text-darken-2 m-0">
@@ -34,11 +68,11 @@
 							<span class="teal-text d-block font-12">Software Engineer</span>
 						</h1>
 						<p class="blue-grey-text mt-3 mb-0 text-darken-2 font-20">
-							Hi there, I’m Grigor, a Senior Software Engineer specializing in building cloud‑native,
+							Hi there, I'm Grigor, a Senior Software Engineer specializing in building cloud‑native,
 							scalable backends with Node.js and AWS. I design high‑performance systems and automate
 							complex ETL workflows using infrastructure as code to drive efficiency and reduce
 							operational costs.
-							I always seek ways to challenge myself and improve my skills. Recently, I’ve been exploring
+							I always seek ways to challenge myself and improve my skills. Recently, I've been exploring
 							how
 							large language models and clustering algorithms can unlock new NLP capabilities and surface
 							actionable
@@ -48,7 +82,7 @@
 							software engineering.
 						</p>
 					</div>
-					<div class="col col-12 col-lg-4 col-xl-4 social">
+					<div class="col col-12 col-lg-4 col-xl-4 social mt-4 mt-lg-0">
 						<div class="collection border-0">
 							<a href="https://www.linkedin.com/in/g-nazaryan/" target="_blank"
 								class="py-2 px-0 px-lg-2 px-xl-2 collection-item text-nowrap blue-grey-text text-darken-2 waves-effect waves-teal font-18">
@@ -67,7 +101,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col col-2 blue-grey darken-2 py-3">
+			<div class="col col-2 blue-grey darken-2 py-3 d-none d-md-block">
 				<div class="row justify-content-end px-4">
 					<div class="p-0">
 						<h2 class="white-text vertical-text font-24 text-right m-0">
@@ -76,9 +110,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col col-10 white py-3 pb-5">
+			<div class="col col-12 col-md-10 white py-3 pb-5">
 				<div class="row experience px-4">
-					<div class="col w-60 p-0 ml-3 position-relative">
+					<div class="col w-60 p-0 ml-3 position-relative d-none d-md-block">
 						<div class="block-icon teal white-text circle text-center align-content-center">
 							<i class="icon-bag align-middle"></i>
 						</div>
@@ -88,12 +122,15 @@
 						<ul class="collection border-0 m-0">
 
 							<li class="collection-item row p-0 border-0 pb-3">
-								<div class="duration col w-60 p-0 mb-2 px-3 px-lg-0 px-xl-0">
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-none d-lg-block w-60">
 									<span class="blue-grey-text text-darken-2 font-16">
-										Present
-										<br class="d-none d-lg-block d-xl-block" />
-										<span class="d-inline d-lg-none d-xl-none">&#160;-&#160;</span>
-										04.2022
+										<span class="d-none d-lg-inline d-xl-inline">Present<br /></span>
+										<span class="d-none d-lg-inline d-xl-inline">04.2022</span>
+									</span>
+								</div>
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-block d-lg-none w-70">
+									<span class="blue-grey-text text-darken-2 font-16">
+										<span class="d-inline d-lg-none d-xl-none">04.2022&nbsp;<span class="d-inline">-&nbsp;Present</span></span>
 									</span>
 								</div>
 								<div class="clearfix w-100 d-lg-none d-xl-none"></div>
@@ -114,12 +151,6 @@
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Architected content delivery through AWS CloudFront for performance
-												optimization across global user bases.
-											</p>
-										</li>
-										<li>
-											<p class="blue-grey-text text-darken-2 font-18">
 												Designed and implemented robust ETL pipelines and analytics workflows
 												in Google BigQuery to extract actionable insights from large user
 												datasets.
@@ -134,7 +165,7 @@
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Built ELMR, a high-volume email delivery and marketing response system,
+												Built a high-volume email delivery and marketing response system
 												to manage personalized outreach, track engagement metrics, and ensure
 												reliable communication with thousands of early users.
 											</p>
@@ -149,9 +180,11 @@
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Played a key role in bridging technical execution with business goals,
-												enabling Prelaunch to scale its data-driven decision-making and improve
-												product validation workflows.
+												Worked with cross-functional teams to align technical efforts with
+												business
+												needs, helping Prelaunch enhance data-driven decisions and streamline
+												product
+												validation.
 											</p>
 										</li>
 
@@ -172,12 +205,15 @@
 
 
 							<li class="collection-item row p-0 border-0 pb-3">
-								<div class="duration col w-60 p-0 mb-2 px-3 px-lg-0 px-xl-0">
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-none d-lg-block w-60">
 									<span class="blue-grey-text text-darken-2 font-16">
-										12.2024
-										<br class="d-none d-lg-block d-xl-block" />
-										<span class="d-inline d-lg-none d-xl-none">&#160;-&#160;</span>
-										04.2023
+										<span class="d-none d-lg-inline d-xl-inline">12.2024<br /></span>
+										<span class="d-none d-lg-inline d-xl-inline">04.2023</span>
+									</span>
+								</div>
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-block d-lg-none w-70">
+									<span class="blue-grey-text text-darken-2 font-16">
+										<span class="d-inline d-lg-none d-xl-none">04.2023&nbsp;<span class="d-inline">-&nbsp;12.2024</span></span>
 									</span>
 								</div>
 								<div class="clearfix w-100 d-lg-none d-xl-none"></div>
@@ -219,7 +255,6 @@
 									</ul>
 
 									<p class="my-2 blue-grey-text text-darken-2 font-18">
-
 										<i>Technologies</i>: <b>NodeJS, TypeScript, PostgreSQL, MongoDB, AWS(EC2, S3,
 											RDS), Hugging Face,
 											OpenAI</b>
@@ -229,12 +264,15 @@
 							</li>
 
 							<li class="collection-item row p-0 border-0 pb-3">
-								<div class="duration col w-60 p-0 mb-2 px-3 px-lg-0 px-xl-0">
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-none d-lg-block w-60">
 									<span class="blue-grey-text text-darken-2 font-16">
-										03.2022
-										<br class="d-none d-lg-block d-xl-block" />
-										<span class="d-inline d-lg-none d-xl-none">&#160;-&#160;</span>
-										03.2020
+										<span class="d-none d-lg-inline d-xl-inline">03.2020<br /></span>
+										<span class="d-none d-lg-inline d-xl-inline">03.2022</span>
+									</span>
+								</div>
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-block d-lg-none w-70">
+									<span class="blue-grey-text text-darken-2 font-16">
+										<span class="d-inline d-lg-none d-xl-none">03.2020&nbsp;<span class="d-inline">-&nbsp;03.2022</span></span>
 									</span>
 								</div>
 								<div class="clearfix w-100 d-lg-none d-xl-none"></div>
@@ -247,15 +285,9 @@
 									<ul class="description-as-bullet-list">
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Designed and developed a scalable backend infrastructure using Node.js,
-												Express, PostgreSQL, and AWS services.
-											</p>
-										</li>
-										<li>
-											<p class="blue-grey-text text-darken-2 font-18">
-												Built and deployed real-time notification systems leveraging WebSockets
-												and containerized microservices with AWS Fargate for efficient
-												orchestration and scaling.
+												Developed a high-performance backend architecture using Node.js,
+												Express, PostgreSQL, and AWS, leveraging AWS Fargate to orchestrate
+												and scale containerized microservices effortlessly.
 											</p>
 										</li>
 										<li>
@@ -269,9 +301,9 @@
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Collaborated cross-functionally with product, design, and marketing
-												teams to define feature requirements and deliver enhancements that
-												directly contributed to growth in user retention and funding success.
+												Worked closely with team members to ensure the platform was intuitive
+												and performance-optimized, delivering a seamless and efficient
+												experience for clients.
 											</p>
 										</li>
 
@@ -292,12 +324,15 @@
 
 
 							<li class="collection-item row p-0 border-0 pb-3">
-								<div class="duration col w-60 p-0 mb-2 px-3 px-lg-0 px-xl-0">
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-none d-lg-block w-60">
 									<span class="blue-grey-text text-darken-2 font-16">
-										03.2022
-										<br class="d-none d-lg-block d-xl-block" />
-										<span class="d-inline d-lg-none d-xl-none">&#160;-&#160;</span>
-										09.2019
+										<span class="d-none d-lg-inline d-xl-inline">03.2022<br /></span>
+										<span class="d-none d-lg-inline d-xl-inline">09.2019</span>
+									</span>
+								</div>
+								<div class="duration col p-0 mb-2 px-3 px-lg-0 px-xl-0 d-block d-lg-none w-70">
+									<span class="blue-grey-text text-darken-2 font-16">
+										<span class="d-inline d-lg-none d-xl-none">09.2019&nbsp;<span class="d-inline">-&nbsp;03.2022</span></span>
 									</span>
 								</div>
 								<div class="clearfix w-100 d-lg-none d-xl-none"></div>
@@ -311,13 +346,6 @@
 									<ul class="description-as-bullet-list">
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Developed and launched an ad tracking system that empowered the company
-												to assess the effectiveness of their advertising campaigns,
-												highlighting potential areas for enhancement and optimization.
-											</p>
-										</li>
-										<li>
-											<p class="blue-grey-text text-darken-2 font-18">
 												Built a custom Bitly-style URL shortener with embedded analytics to
 												monitor ad performance across multiple channels, improving attribution
 												accuracy and marketing effectiveness.
@@ -325,22 +353,22 @@
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Developed the AdsDashboard, an all-in-one analytics platform that
-												aggregated real-time data from Google Analytics, Facebook Ads, and
-												Kickstarter referral sources, enabling unified visibility into campaign
-												performance.
+												Developed an all-in-one analytics platform that aggregated real-time
+												data
+												from Google Analytics, Facebook Ads, and Kickstarter referral sources,
+												enabling unified visibility into campaign performance.
 											</p>
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Created an automated survey management system to engage Kickstarter
+												Worked on an automated survey management system to engage Kickstarter
 												backers post-campaign, boosting response rates and operational
 												efficiency in follow-up communications.
 											</p>
 										</li>
 										<li>
 											<p class="blue-grey-text text-darken-2 font-18">
-												Partnered with cross-functional stakeholders to identify pain points in
+												Collaborated with cross-functional teams to identify pain points in
 												campaign tracking and translated those into scalable, easy-to-use
 												technical solutions.
 											</p>
@@ -388,7 +416,7 @@
 				<div class="row px-4">
 					<div class="col-12 col-lg-6 col-xl-6 mt-4 mt-lg-0 mt-xl-0">
 						<div class="row min-h-100">
-							<div class="col w-60 p-0 ml-3 position-relative">
+							<div class="col w-60 p-0 ml-3 position-relative d-none d-md-block">
 								<div class="block-icon teal white-text circle text-center align-content-center">
 									<i class="icon-cog align-middle"></i>
 								</div>
@@ -406,15 +434,10 @@
 										</tr>
 										<tr>
 											<th>
-												<div
-													style="position: relative; width: 100%; height: 0; padding-bottom: 80%;">
-													<div
-														style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-														<div data-iframe-width="100%" data-iframe-height="100%"
-															data-share-badge-id="b0f377fa-166d-4855-9e40-d2d8d783a3c9"
-															data-share-badge-host="https://www.credly.com"></div>
-													</div>
-												</div>
+												<div style="width: 100%; max-width: 300px; height: 100px;"
+													data-iframe-width="250" data-iframe-height="270"
+													data-share-badge-id="b0f377fa-166d-4855-9e40-d2d8d783a3c9"
+													data-share-badge-host="https://www.credly.com"></div>
 												<script type="text/javascript" async
 													src="//cdn.credly.com/assets/utilities/embed.js"></script>
 											</th>
@@ -426,7 +449,7 @@
 					</div>
 					<div class="col-12 col-lg-6 col-xl-6 mt-4 mt-lg-0 mt-xl-0">
 						<div class="row min-h-100">
-							<div class="col w-60 p-0 ml-3 position-relative">
+							<div class="col w-60 p-0 ml-3 position-relative d-none d-md-block">
 								<div class="block-icon teal white-text circle text-center align-content-center">
 									<i class="icon-cog align-middle"></i>
 								</div>
@@ -486,7 +509,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col col-2 blue-grey darken-2 py-3">
+			<div class="col col-2 blue-grey darken-2 py-3 d-none d-md-block">
 				<div class="row justify-content-end px-4">
 					<div class="p-0">
 						<h2 class="teal-text vertical-text font-24 text-right m-0">
@@ -500,17 +523,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="col col-10 white py-3 pb-5">
+			<div class="col col-12 col-md-10 white py-3 pb-5">
 				<div class="row px-4">
 					<div class="col-12 col-md-6 col-lg-6 col-xl-6">
 						<div class="row min-h-100">
-							<div class="col col-6 w-60 p-0 ml-3 position-relative">
+							<div class="col col-6 w-60 p-0 ml-3 position-relative d-none d-md-block">
 								<div class="block-icon teal white-text circle text-center align-content-center">
 									<i class="icon-language align-middle"></i>
 								</div>
 								<div class="vertical-line teal"></div>
 							</div>
-							<div class="col col-6">
+							<div class="col col-12 col-md-6">
 								<table class="table mt-4 table-responsive table-skills">
 									<tbody>
 										<tr>
